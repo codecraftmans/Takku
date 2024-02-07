@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+    <title>Takku</title>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey ! Listen Takku this is for you 💖....</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>Love</span> interval tk nhi end tk</h1>
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+
+          Toh aaj me kuch moments yaad kr rha hu tere sath like first jb hum mile the first time mene tere wha se ek shoe liya th use change krwane ke liye me tere wha aaya fir tu mili hmari first meeting thodi annoying jrror thi. <br>
+          2. Auditorium me jb meri tarif hui thi tb tune mujhe tease kra or bola lgta h confidence bd gya h janab ka  <br>
+          3. fir hum dono iskcon gye me apni life me iskcon tere sath hi gya hu pehi brr kyuki mujhe puja wgehra thodi psnd nhi thi . wh mene trko ek ring di wo pta ni tune kha khodi heheh. trko wh sajaya mene fulo se.. sb yad h <br>
+          4. hum movie dekhne gye kerala story . wh mene trko pure time dekha bs tere sath accha feel hua ek connection feel hua tere sath. tu mujhse hr baar puchti iske agge ky hoga manish heheh <br>
+          5. hum fir iskcon ye wo time th jha tu mere bht close aa gya th . hum wh gol gol ghume fere liye heheh . trko pkd ke chlna mrko abhi bhi accha lgta h wese hi jese pehle lgta th. <br>
+
+          6. 24 May 2023 . jb tune mera propsoal accept kiya or hum dono relationship me aaye . me firse tere sath whi sare moments recreate  krna chahta hu hmare relationship me jo bhi rolercoaster abhi tk aaye h unhe bhulakr. 
+          <!-- You are the person I have been dreaming all my life , so allow me to
+          express my intense love for you. You are the most precious thing in my
+          life. You have fascinated my heart and seized my mind with your
+          magnetic presence and I keep dreaming of yourself Your memories are
+          invaluable treasure of my life, which are locked inside my heart. The
+          time spent with you was the most mesmerizing and delightful of my
+          life.--> 
+          <br />
+         <p>
+          All of those things. <span style="color: red; font-weight: 200px;">I LOVE YOU TAKKU interval tk nhi pure end tk </span>
+          This letter is a token of my love for you. <br>
+          If You Accept
+          <a href="new.html">Click Here</a></p>
+         <!-- </p> All of those things. I LOVE YOU TAKKU interval tk nhi pure end tk . 
+          This letter is a token of my love for you. <br>
+          If You Accept
+          <a href="new.html">Click Here</a> -->
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
